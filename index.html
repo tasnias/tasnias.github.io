@@ -1,14 +1,149 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!--Link to use icons such as the microphone and settings gear-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <!--Link to external stylesheet-->
-    <!--<link rel="stylesheet" type="text/css" href="ts_stylesheet.css">-->
-    <!--Title that appears at top of new tab-->
+    <link href='styles.css' rel='stylesheet' type='text/css' />
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Muli|Sacramento" rel="stylesheet">
     <title>Tasnia</title>
   </head>
   <body>
 
+    <div class="skew banner">
+      <div class="skew-inner">
+          <nav>
+              <span id="sign">Tasnia Sarwar</span>
+                <ul>
+                  <li><a href="#skills">Skills & Awards</a></li>
+                  <li><a href="#experiences">Experiences</a></li>
+                  <li><a href="#coursework">Course Work</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#creative">Creative Content</a></li>
+                </ul>
+            </nav>
+  
+            <div id="about" class="container">
+                <div class="content">
+                  <h1>Nice to meet you.</h1>
+                  <p>I'm Tasnia, a sophomore at UNC Chapel Hill studying Computer Science and Studio Art. I'm interested in front end development, human-computer interaction, accessible technology, and the applicable intersection of CS and art.</p>
+                  <br>
+                  <p>Contact me at tasnias@live.unc.edu</p>
+                  <button><i class="fab fa-linkedin-in"></i> &nbsp; LinkedIn</button>
+                  <button> <i class="fab fa-github"></i> &nbsp; GitHub</button>
+                </div>
+                <img src="me.png" id="me"/>
+              </div>
+      </div>
+    </div>
+    
+
+    
+
+    <div id="skills" class="skew-inner container">
+      <div class="skew">
+          <h2>Skills & Awards</h2>
+          <ul>
+              <li>Comfortable with Java; familiar with VB.NET, C#, Base SAS, Python, JavaScript (Vanilla, React Native, Vue)</li>
+              <li>Competent in web design with HTML5/CSS</li>
+              <li>Comfortable with SAS Studio, Data Integration Studio, Enterprise Guide, and Visual Analytics</li>
+              <li>Working knowledge of computer hardware</li>
+              <li>Adobe Certified Associate; Adobe Premiere Pro, Photoshop, Illustrator, & Dreamweaver certified; comfortable with Adobe XD</li>
+              <li>Experienced in creating multimedia content using Adobe CC products and other similar utilities</li>
+              <li>Excellent teamwork skills; organized, flexible, and responsible</li>
+            <li>Pogue Scholar, Class of 2021</li>
+            <li>Member of Honors Carolina</li>
+            <li>Dean's List (3/3 semesters)</li>
+            <li>Best of Use Microsoft Stack, Pearl Hacks 2018</li>
+          </ul>
+        </div>
+      </div>
+      
+      
+      <div class="skew">
+        <div id="experiences" class="container skew-inner">
+          <h2>Experiences</h2>
+          <h3>Work Experience</h3>
+          <ul>
+            <li><b>Incoming EP Intern, Google (Summer 2019)</b>
+              <ul>
+                  <li>Will be in the New York Office working on a Google Cloud Storage front-end team.</li>
+              </ul>
+            </li>
+            <li><b>Cloud Operations Management Intern, SAS Institute (Summer 2017, 2018)</b></li>
+              <ul>
+                  <li>Responsible for physical check ups on data center machinery to ensure health of servers. Aided in
+                      decommissioning outdated and unused servers to consolidate data center resources.</li>
+                  <li>Wrote Python script to discover and attach hundreds of physical hosts from company inventory into
+                      check_mk to automate hardware monitoring.</li>
+                  <li>Used PuTTY SSH client to attach thousands of virtual machines to Foreman and Puppet for life cycle and
+                      configuration management.</li>
+              </ul>
+            <li><b>Client Infrastructure Intern, SAS Institute (Summer 2016)</b></li>
+            <ul>
+              <li>
+                  Tested, repaired, and deployed hundreds of company assets (laptops, desktops, phones, etc.) each
+                  week to provide up-to-date and functional technology for internal employees.
+              </li>
+              <li>Used Base SAS and SAS VA to visualize company printer data and evaluate employee printing costs.</li>
+            </ul>
+          </ul>
+          <br>
+          <h3>Other things</h3>
+          <ul>
+            <li>Tech Team Program Chair (2019)
+            </li>
+            <ul>
+              <li><i>Previous: Communications Chair & Graphic Designer (2017-2018)</i></li>
+            </ul>
+            <li>HackNC Graphic Designer & Volunteer (2017, 2018)</li>
+            <li>Pearl Hacks Logistics Volunteer (2019)</li>
+            <li>Member of MakeNet (3D Printing & Vinyl Cutter trained) (2017-2019)</li>
+            <li>Member of The Iniative Against Poverty & Inequality (2018-2019)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="triangle-down">
+      </div>
+
+      <div id="coursework" class="container">
+          <h2>Classes I've Taken</h2>
+          <ul>
+            <li>Foundations of Programming (Honors, with functional programming in Scala)</li>
+            <li>Data Structures & Algorithms Analysis</li>
+            <li>Models of Languages & Computation</li>
+            <li>Computer Architecture</li>
+            <li>Discrete Math</li>
+            <li>Calculus I-III</li>
+            <li>Linear Algebra</li>
+            <li>Multimedia & Webpage Design</li>
+            <li>E-Commerce I & II</li>
+            <li>Game Development in C#</li>
+            <li>Base SAS Programming I</li>
+          </ul>
+      </div>
+
+    <div id="projects" class="container">
+        <h2>Projects</h2>
+        <ul>
+          <li><h3>Dress Me</h3>
+            HTML app that uses Microsoft Azure's Computer Vision API to tag pictures of clothing and recommends an outfit to the user based on the weather in their location and the tagged clothes. Won "Best Use of Microsoft Stack" at Pearl Hacks 2018.</li> 
+          <li>
+            Pixel Manipulator Java widget that takes in an image URL and allows the user to non-destructively blur, lighten/darken, and saturate/desaturate the image.</li> 
+          <li>
+             VegeTable Tennis C# recreation of pong, but with vegetables, utilizing XNA.</li>
+        </ul>
+    </div>   
+    <div class="triangle-down">
+    </div> 
+    <div id="creative" class="container">
+        <h2>Creative Content</h2>
+        <img src="HackNCStickerDraft1.1.png">
+        <img src="HackNCStickerDraft2.1.png">
+        <img src="popcorn.png">
+        <img src="Demos Logo 2.png">
+        <img src="vote4justice@4x.png">
+        <img src="asset 1 rasterized.png">
+        <img src="Asset 1@3x.png">
+    </div>
   </body>
 </html>

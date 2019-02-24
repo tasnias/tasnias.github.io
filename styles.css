@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Muli', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+}
+
+#sign {
+    font-family: Sacramento, cursive;
+    font-size: 2em;
+    padding-left: 70px;
+    position: relative;
+    top: -10px;
+    color: #E67B32;
+}
+
+ul {
+    padding-left: 1em;
+}
+
+li {
+    margin-top: .5em;
+}
+
+nav {
+    padding: 30px 0;
+}
+
+nav a {
+    color: #FA9E5F;
+}
+
+nav a:hover {
+    color: rgb(197, 89, 17);
+}
+
+nav ul {
+    float: right;
+    padding-right: 20px;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#about .content {
+    width: 60%;
+    float: left;
+    color: white;
+}
+
+h1 {
+    font-size: 5em;
+    font-family: "Abril Fatface";
+    color: #FA9E5F;
+}
+
+h2 {
+    margin: 20px 0;
+    font-size: 2.2em;
+    color: rgb(197, 89, 17);
+    text-align: center;
+}
+
+#me {
+    padding: 3em 100px;
+    width: 15%;
+    float: right;
+}
+
+button {
+    border: none;
+    padding: 11px 31px 12px;
+    border-radius: 20px;
+    box-shadow: 0px 1px 3px #793100;
+    margin: 2em 15px;
+    background-color: rgb(197, 89, 17);
+    color: white;
+    font-family: "Muli";
+}
+
+#about {
+    min-height: 60vh;
+}
+
+.container {
+    padding: 0 90px 2em;
+    clear: both;
+    overflow: auto;
+}
+
+#skills, #coursework, #creative {
+    background-color: white;
+    padding-bottom: none;
+}
+
+#experiences, #projects {
+    background-color: whitesmoke;
+    z-index: 2;
+    position: relative;
+    padding-bottom: none;
+}
+
+.banner {
+    background-image: linear-gradient(to bottom right, #A24201, #793100);
+    margin-top: -5em;
+    padding-top: 5em;
+}
+
+.skew-inner {
+    transform: skewY(-2deg); 
+    padding-top: none;
+}
+
+.skew {
+    transform: skewY(2deg);  
+}
+
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 49vw solid transparent;
+	border-right: 49vw solid transparent;
+    border-top: 5vh solid whitesmoke;
+}
+
+#creative {
+    text-align: center;
+}
+
+#creative img {
+    height: 200px;
+    padding: 15px;
+}
