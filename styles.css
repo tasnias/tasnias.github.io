@@ -11,9 +11,8 @@ body {
 #sign {
     font-family: Sacramento, cursive;
     font-size: 2em;
-    padding-left: 70px;
-    position: relative;
-    top: -10px;
+    /*position: relative;
+    top: -10px;*/
     color: #E67B32;
 }
 
@@ -22,11 +21,15 @@ ul {
 }
 
 li {
-    margin-top: .5em;
+    /*margin-top: .5em;*/
 }
 
 nav {
-    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 5px 30px;
+    align-items:center;
 }
 
 nav a {
@@ -38,24 +41,35 @@ nav a:hover {
 }
 
 nav ul {
-    float: right;
-    padding-right: 20px;
+    /*float: right;
+    padding-right: 20px;*/
+    display: inline-flex;
+    justify-content: space-evenly;
 }
 
 nav li {
     list-style-type: none;
-    display: inline-block;
-    padding: 0 20px;
+    /* display: inline-block;*/
+    padding: 0 1em;
 }
 
 a {
     text-decoration: none;
 }
 
+
+#about {
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
 #about .content {
     width: 60%;
-    float: left;
+    /*float: left;*/
     color: white;
+    align-self: center;
 }
 
 h1 {
@@ -72,9 +86,12 @@ h2 {
 }
 
 #me {
-    padding: 3em 100px;
+    /*padding: 3em 100px;
     width: 15%;
-    float: right;
+    float: right;*/
+    width: 15%;
+    height: 15%;
+    align-self: center;
 }
 
 button {
@@ -88,9 +105,6 @@ button {
     font-family: "Muli";
 }
 
-#about {
-    min-height: 60vh;
-}
 
 .container {
     padding: 0 90px 2em;
@@ -140,4 +154,43 @@ button {
 #creative img {
     height: 200px;
     padding: 15px;
+}
+
+@media only screen and (min-width: 1441px) {
+    #sign {
+        padding-top: 20px;
+    }
+
+    nav {
+        margin-bottom: 40px;
+    }
+    
+    nav, #about, #skills, #experiences, #coursework, #projects, #creative {
+        padding: 0 15vw;
+        font-size: xx-large;
+    }
+
+    h1 {
+        line-height: 1em;
+        margin-bottom: .5em;
+    }
+
+    h2 {
+        margin-top: 1em;
+    }
+
+    button {
+        font-size: xx-large;
+        padding: 30px 50px;
+        border-radius: 55px;
+        margin-bottom: 5em;
+    }
+    #skills, #experiences, #coursework, #projects, #creative {
+        min-height: 25vw;
+        line-height: 2em;
+    }
+
+    #skills, #experiences, #coursework {
+        padding-bottom: 3vw;
+    }
 }
