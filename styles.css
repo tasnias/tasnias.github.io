@@ -20,8 +20,8 @@ ul {
     padding-left: 1em;
 }
 
-li {
-    /*margin-top: .5em;*/
+#experiences li {
+    margin-top: .5em;
 }
 
 nav {
@@ -185,6 +185,8 @@ button {
         border-radius: 55px;
         margin-bottom: 5em;
     }
+
+    
     #skills, #experiences, #coursework, #projects, #creative {
         min-height: 25vw;
         line-height: 2em;
@@ -194,3 +196,20 @@ button {
         padding-bottom: 3vw;
     }
 }
+
+
+@media only screen and (max-width: 767px) {
+
+    #me {
+        width: 10em;
+    }
+
+    #about {
+        flex-direction: column;
+    }
+
+    #about .content {
+        width: 100%;
+    }
+}
+
