@@ -20,13 +20,14 @@ ul {
     padding-left: 1em;
 }
 
-#experiences li {
+li {
     margin-top: .5em;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     box-sizing: border-box;
     padding: 5px 30px;
     align-items:center;
@@ -199,7 +200,6 @@ button {
 
 
 @media only screen and (max-width: 767px) {
-
     #me {
         width: 10em;
     }
@@ -210,6 +210,21 @@ button {
 
     #about .content {
         width: 100%;
+    }
+
+    #about, #skills, #experiences, #coursework, #projects, #creative {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+
+    nav {
+        padding: 0;
+        font-size: small;
+    }
+
+    #sign {
+        text-align: center;
+        margin: 0 auto;
     }
 }
 
