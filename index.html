@@ -1,156 +1,327 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link href='styles.css' rel='stylesheet' type='text/css' />
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Muli|Sacramento" rel="stylesheet">
-    <title>Tasnia</title>
-  </head>
-  <body>
+<html lang="en">
 
-    <div class="skew banner">
-      <div class="skew-inner">
-          <nav>
-              <span id="sign">Tasnia Sarwar</span>
-                <ul>
-                  <li><a href="#skills">Skills & Awards</a></li>
-                  <li><a href="#experiences">Experiences</a></li>
-                  <li><a href="#coursework">Course Work</a></li>
-                  <li><a href="#projects">Projects</a></li>
-                  <li><a href="#creative">Creative Content</a></li>
+<head>
+    <title>Tasnia Sarwar</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/54e7e1ecc6.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            font-family: Raleway;
+        }
+
+        body {
+            background-color: rgba(185, 185, 185, 0.164);
+        }
+
+        h1,
+        h2 {
+            font-family: 'Abril Fatface';
+        }
+
+        h3 {
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+
+        nav {
+            color: #C45911 !important;
+            border-bottom: 1px solid rgba(196, 89, 17);
+        }
+
+        nav li a {
+            color: #C45911 !important;
+        }
+
+        .nav-header {
+            margin-top: -2.5rem;
+            padding-top: 2.5rem;
+            visibility: hidden;
+        }
+
+        footer {
+            background-color: #C45911;
+        }
+
+        ul.timeline {
+            border-left: 5px solid #C45911;
+            padding: 0;
+            margin-left: 2rem;
+        }
+
+        .timeline>li {
+            padding: 1rem;
+            list-style-type: none;
+            display: flex;
+        }
+
+        .subtitle {
+            font-size: .8rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: rgb(114, 114, 114);
+        }
+
+        .circle {
+            background-color: white;
+            height: 60px !important;
+            width: 60px !important;
+            padding: 10px;
+            /* border: 5px solid #C45911; */
+            border-radius: 30px;
+            margin-left: -48.5px;
+            margin-right: 1rem;
+        }
+
+        .google {
+            background-image: url('images/Big_G.jpg');
+            background-size: contain;
+        }
+
+        .sas {
+            background-image: url('images/sas.jpg');
+            background-size: contain;
+        }
+
+        .btn {
+            background-color: #C45911;
+            color: white;
+            border-radius: 0;
+        }
+
+        .btn:hover {
+            background-color: rgb(182, 73, 0);
+            color: white;
+            border-radius: 0;
+        }
+
+        .outline {
+            background-color: transparent;
+            color: #C45911 !important;
+            border: 1px solid #C45911;
+            border-radius: 0;
+        }
+
+        .outline:hover {
+            background-color: rgba(196, 89, 17, 0.1);
+            color: #C45911 !important;
+            border: 1px solid #C45911;
+            border-radius: 0;
+        }
+
+        #photo {
+            /* background-color: #C45911; */
+            width: 400px;
+            height: 400px;
+        }
+
+        footer a {
+            color: white !important;
+            font-size: 1.5rem;
+            margin: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top text-uppercase justify-content-between">
+            <h2 class='p-0 m-0'>Tasnia Sarwar</h2>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Work Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#other">Other Experience</a>
+                    </li>
                 </ul>
-            </nav>
-  
-            <div id="about" class="container">
-                <div class="content">
-                  <h1>Nice to meet you.</h1>
-                  <p>I'm Tasnia, a sophomore at UNC Chapel Hill studying Computer Science and Studio Art. I'm interested in front-end development, human-computer interaction, accessible technology, and the applicable intersection of CS and art.</p>
-                  <br>
-                  <p>Contact me at tasnias@live.unc.edu</p>
-                  <button onclick="window.open('https://www.linkedin.com/in/tasnia-sarwar/');"><i class="fab fa-linkedin-in"></i> &nbsp; LinkedIn</button>
-                  <button onclick="window.open('https://github.com/tasnias');"> <i class="fab fa-github"></i> &nbsp; GitHub</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <div class='bg-white shadow-sm'>
+                <section class='mt-5 container' id='hero'>
+                    <div class='row'>
+                        <div class='col-12 col-lg-7 my-5 text-center'>
+                            <img src='me.png' class=''>
+                        </div>
+                        <div
+                            class='col-12 col-lg-5 d-flex flex-column align-content-center align-items-center justify-content-center'>
+                            <h1 class='text-center mb-4'>Computer Science & <br> Studio Art Undergrad <br>@ UNC Chapel
+                                Hill</h1>
+                            <div>
+                                <a class='btn text-white text-uppercase shadow-sm px-3 m-1' target='new'
+                                    href='https://docs.google.com/document/d/157ZIBaBB2N8kswzl6k5n3vmAJamAf8zdyHPy7-pJj0Y/edit?usp=sharing'><i
+                                        class="far fa-file"></i>&nbsp; Resume</a>
+                                <a class='btn outline text-uppercase px-3 m-1' target='new'
+                                    href='mailto:tasnias@live.unc.edu'><i class="far fa-envelope"></i> &nbsp;
+                                    Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <hr class='nav-header' id='education'>
+            <section class='container'>
+                <h2 class='mt-5'>Education </h2>
+                <div class='row d-flex justify-content-center p-1'>
+                    <div class='col-12 col-lg-6 shadow-sm p-3 bg-white m-2'>
+                        <h3>University of North Carolina at Chapel Hill</h3>
+                        <h4 class='subtitle'>Class of 2021</h4>
+                        <h4 class='subtitle'>Computer Science B.S. | Studio Art Minor</h4>
+                        <ul>
+                            <li>GPA: 3.928</li>
+                            <li>Pogue Scholar</li>
+                            <li>Accepted into Honors Carolina and the Scholars Program</li>
+                        </ul>
+                    </div>
+                    <div class='col-12 col-lg-5 shadow-sm p-3 bg-white m-2'>
+                        <h3>Relevant Coursework</h3>
+                        <ul>
+                            <li>Computer Vision
+                            </li>
+                            <li>Machine Learning</li>
+                            <li>Modern Web Development</li>
+                            <li>Advanced Algorithm Analysis</li>
+                            <li>Models of Languages & Computation</li>
+                        </ul>
+                    </div>
                 </div>
-                <img src="me.png" id="me"/>
-              </div>
-      </div>
-    </div>
-    
-
-    
-
-    <div id="skills" class="skew-inner container">
-      <div class="skew">
-          <h2>Skills & Awards</h2>
-          <ul>
-              <li>Comfortable with Java; familiar with VB.NET, C#, Base SAS, Python, JavaScript (Vanilla, React Native, Vue)</li>
-              <li>Competent in web design with HTML5/CSS</li>
-              <li>Comfortable with SAS Studio, Data Integration Studio, Enterprise Guide, and Visual Analytics</li>
-              <li>Working knowledge of computer hardware</li>
-              <li>Adobe Certified Associate; Adobe Premiere Pro, Photoshop, Illustrator, & Dreamweaver certified; comfortable with Adobe XD</li>
-              <li>Experienced in creating multimedia content using Adobe CC products and other similar utilities</li>
-              <li>Excellent teamwork skills; organized, flexible, and responsible</li>
-            <li>Pogue Scholar, Class of 2021</li>
-            <li>Member of Honors Carolina</li>
-            <li>Dean's List (3/3 semesters)</li>
-            <li>Best of Use Microsoft Stack, Pearl Hacks 2018</li>
-          </ul>
+            </section>
+            <hr class='nav-header' id='work'>
+            <section class='container'>
+                <h2 class='mt-5'>Work Experience</h2>
+                <div class='d-flex justify-content-center'>
+                    <ul class='timeline'>
+                        <!-- <li>
+                            <img src='images/Big_G.jpg' class='circle shadow-sm'>
+                            <div class='shadow-sm p-3 bg-white w-100'>
+                                <h3>Software Engineering Intern</h3>
+                                <h4 class='subtitle'>Google, Corporate Engineering POps Works</h4>
+                                <h4 class='subtitle'>May 2020 - August 2020</h4>
+                            </div>
+                        </li> -->
+                        <li>
+                            <img src='images/unc.jpg' class='circle shadow-sm'>
+                            <div class='shadow-sm p-3 bg-white w-100'>
+                                <h3>Undergraduate Learning Assistant</h3>
+                                <h4 class='subtitle'>UNC Chapel Hill, COMP 590: Software Archictectures</h4>
+                                <h4 class='subtitle'>January 2020 - Present</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <img src='images/unc.jpg' class='circle shadow-sm'>
+                            <div class='shadow-sm p-3 bg-white w-100'>
+                                <h3>Undergraduate Research Assistant</h3>
+                                <h4 class='subtitle'>UNC Chapel Hill, VACLab</h4>
+                                <h4 class='subtitle'>August 2019 - January 2020</h4>
+                                <ul>
+                                    <li>Created feature within lab’s healthcare data explorer to calculate and visualize
+                                        a selected patient cohort's statistical distance from baseline datasets, helping
+                                        UNC researchers recognize unconscious selection bias while studying cohort
+                                        subsets.
+                                    </li>
+                                    <li>
+                                        Developed using server-side Java + client-side Javascript + PostgreSQL; set up
+                                        and used Shibboleth for SAML-based authentication.
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <img src='images/Big_G.jpg' class='circle shadow-sm'>
+                            <div class='shadow-sm p-3 bg-white w-100'>
+                                <h3>Engineering Practicum Intern</h3>
+                                <h4 class='subtitle'>Google, Cloud Storage Front End</h4>
+                                <h4 class='subtitle'>May 2019 - August 2019</h4>
+                                <ul>
+                                    <li>Created pages exposing Datastore Import/Export in the Cloud Console, offering a
+                                        user-friendly alternative to the corresponding gcloud commands.
+                                    </li>
+                                    <li>
+                                        Prototyped functionality to manually failover a Redis instance from the Cloud
+                                        Console, allowing users to see how their instance behaves during an unexpected
+                                        failover.
+                                    </li>
+                                    <li>Integrated Cloud Billing API into the Redis price estimator, resulting in a more
+                                        accurate estimation.</li>
+                                    <li>
+                                        Used Typescript + Angular with NgRx store and RxJS. Unit tested with Jasmine and
+                                        Karma.</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <img src='images/sas.svg' class='circle shadow-sm'>
+                            <div class='shadow-sm p-3 bg-white w-100'>
+                                <h3>Technical Intern</h3>
+                                <h4 class='subtitle'>SAS Institute, R&D Operations</h4>
+                                <h4 class='subtitle'>May 2016 - August 2018</h4>
+                                <ul>
+                                    <li>
+                                        Wrote a Python script to discover and attach hundreds of physical hosts into
+                                        check_mk to automate hardware monitoring, alleviating the need for regular
+                                        hardware check ups across 3+ data centers.
+                                    </li>
+                                    <li>
+                                        Wrote shell scripts to automate adding thousands of virtual machines to Foreman
+                                        and Puppet for life cycle and configuration management.
+                                    </li>
+                                    <li>
+                                        Used Base SAS to visualize company printing data to give employees an aggregate
+                                        view of their printing costs in the internal IT portal.
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <hr class='nav-header' id='other'>
+            </section>
+            <section class='container'>
+                <h2 class='mt-5'>Projects/Other Experience </h2>
+                <p>Under construction</p>
+                <!-- <ul>
+                    <li>Director of Technology at Pearl Hacks</li>
+                    <li>Swipe Share</li>
+                    <li>Google Sheets to JSON</li>
+                    <li>Program Chair at UNC IOP Tech Team</li>
+                </ul> -->
+            </section>
+            </>
+    </main>
+    <footer class='footer text-white text-center p-5'>
+        <div>
+            <a href='' target='new'><i class="fab fa-linkedin-in"></i></a>
+            <a href='http://github.com/tasnias' target='new'><i class="fab fa-github"></i></a>
+            <a href='mailto:tasnias@live.unc.edu' target='new'><i class="far fa-envelope"></i></a>
+            <a href='https://docs.google.com/document/d/157ZIBaBB2N8kswzl6k5n3vmAJamAf8zdyHPy7-pJj0Y/edit?usp=sharing'
+                target='new'><i class="far fa-file"></i></a>
+            <!-- ≧◉◡◉≦ -->
         </div>
-      </div>
-      
-      
-      <div class="skew">
-        <div id="experiences" class="container skew-inner">
-          <h2>Experiences</h2>
-          <h3>Work Experience</h3>
-          <ul>
-            <li><b>Incoming EP Intern, Google (Summer 2019)</b>
-              <ul>
-                  <li>Will be in the New York Office working on a Google Cloud Storage front-end team.</li>
-              </ul>
-            </li>
-            <li><b>Cloud Operations Management Intern, SAS Institute (Summer 2017, 2018)</b></li>
-              <ul>
-                  <li>Responsible for physical check ups on data center machinery to ensure health of servers. Aided in
-                      decommissioning outdated and unused servers to consolidate data center resources.</li>
-                  <li>Wrote Python script to discover and attach hundreds of physical hosts from company inventory into
-                      check_mk to automate hardware monitoring.</li>
-                  <li>Used PuTTY SSH client to attach thousands of virtual machines to Foreman and Puppet for life cycle and
-                      configuration management.</li>
-              </ul>
-            <li><b>Client Infrastructure Intern, SAS Institute (Summer 2016)</b></li>
-            <ul>
-              <li>
-                  Tested, repaired, and deployed hundreds of company assets (laptops, desktops, phones, etc.) each
-                  week to provide up-to-date and functional technology for internal employees.
-              </li>
-              <li>Used Base SAS and SAS VA to visualize company printer data and evaluate employee printing costs.</li>
-            </ul>
-          </ul>
-          <br>
-          <h3>Other things</h3>
-          <ul>
-            <li>Tech Team Program Chair (2019)
-            </li>
-            <ul>
-              <li><i>Previous: Communications Chair & Graphic Designer (2017-2018)</i></li>
-            </ul>
-            <li>HackNC Graphic Designer (2017, 2018)</li>
-            <li>Member of MakeNet (3D Printing & Vinyl Cutter trained) (2017-2019)</li>
-            <li>Member of Initiative Against Poverty & Inequality (2018-2019)</li>
-          </ul>
-        </div>
-      </div>
+    </footer>
+</body>
 
-      <div class="triangle-down">
-      </div>
-
-      <div id="coursework" class="container">
-          <h2>Classes I've Taken</h2>
-          <ul>
-            <li>Foundations of Programming (Honors, with functional programming in Scala)</li>
-            <li>Data Structures & Algorithms Analysis</li>
-            <li>Models of Languages & Computation</li>
-            <li>Computer Architecture</li>
-            <li>Discrete Math</li>
-            <li>Calculus I-III</li>
-            <li>Linear Algebra</li>
-            <li>Multimedia & Webpage Design</li>
-            <li>E-Commerce I & II</li>
-            <li>Game Development in C#</li>
-            <li>Base SAS Programming I</li>
-          </ul>
-      </div>
-
-    <div id="projects" class="container">
-        <h2>Projects</h2>
-        <ul>
-          <li><h3>Dress Me</h3>
-            HTML app that uses Microsoft Azure's Computer Vision API to tag pictures of clothing and recommends an outfit to the user based on the weather in their location and the tagged clothes. Won "Best Use of Microsoft Stack" at Pearl Hacks 2018.</li> 
-          <li>
-            <h3>Pixel Manipulator</h3> Java widget that takes in an image URL and allows the user to non-destructively blur, lighten/darken, and saturate/desaturate the image.</li> 
-          <li>
-             <h3>VegeTable Tennis</h3> C# recreation of pong, but with vegetables, utilizing XNA.</li>
-          <li>
-            <h3>UNC Swipe Share (WIP)</h3> Work-in-progress Vue.js SPA to help UNC students share and receive meal swipes. <a href="https://unc-swipe-share.firebaseapp.com/" style="color:brown">Link</a>.
-          </li>
-        </ul>
-    </div>   
-    <div class="triangle-down">
-    </div> 
-    <div id="creative" class="container">
-        <h2>Creative Content</h2>
-        <p>A random assortment of things I've made.</p>
-        <img src="HackNCStickerDraft1.1.png">
-        <img src="HackNCStickerDraft2.1.png">
-        <img src="popcorn.png">
-        <img src="Demos Logo 2.png">
-        <img src="vote4justice@4x.png">
-        <img src="asset 1 rasterized.png">
-        <img src="Asset 1@3x.png">
-        <img src="educationicon.svg">
-        <img src="healthcareicon.svg">
-        <img src="jobsicon.svg">
-        <img src="lpAsset 2.svg">
-    </div>
-  </body>
 </html>
