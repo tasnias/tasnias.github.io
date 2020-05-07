@@ -24,12 +24,17 @@
         }
 
         body {
-            background-color: rgba(185, 185, 185, 0.164);
+            /* background-color: rgba(185, 185, 185, 0.15); */
         }
 
-        h1,
-        h2 {
+        h1
+        {
             font-family: 'Abril Fatface';
+        }
+        h2 {
+            font-weight: bold;
+            color: #C45911;
+            text-transform: uppercase;
         }
 
         h3 {
@@ -39,10 +44,11 @@
 
         nav {
             color: #C45911 !important;
-            border-bottom: 1px solid rgba(196, 89, 17);
+            border-bottom: 2px solid lightgray;
+            font-weight: bolder;
         }
 
-        nav li a {
+        nav li a:hover {
             color: #C45911 !important;
         }
 
@@ -57,7 +63,7 @@
         }
 
         ul.timeline {
-            border-left: 5px solid #C45911;
+            border-left: 5px solid lightgray;
             padding: 0;
             margin-left: 2rem;
         }
@@ -80,7 +86,7 @@
             height: 60px !important;
             width: 60px !important;
             padding: 10px;
-            /* border: 5px solid #C45911; */
+            /* border: 5px solid lightgray; */
             border-radius: 30px;
             margin-left: -48.5px;
             margin-right: 1rem;
@@ -99,31 +105,30 @@
         .btn {
             background-color: #C45911;
             color: white;
-            border-radius: 0;
+            border: 2px solid #C45911;
+            font-weight: bold;
+            /* border-radius: .5rem; */
         }
 
         .btn:hover {
             background-color: rgb(182, 73, 0);
             color: white;
-            border-radius: 0;
         }
 
         .outline {
             background-color: transparent;
             color: #C45911 !important;
-            border: 1px solid #C45911;
-            border-radius: 0;
+            /* border: 1px solid #C45911; */
+            /* border-radius: .5rem; */
         }
 
         .outline:hover {
             background-color: rgba(196, 89, 17, 0.1);
             color: #C45911 !important;
-            border: 1px solid #C45911;
-            border-radius: 0;
+            /* border: 1px solid #C45911; */
         }
 
         #photo {
-            /* background-color: #C45911; */
             width: 400px;
             height: 400px;
         }
@@ -133,20 +138,31 @@
             font-size: 1.5rem;
             margin: 1.5rem;
         }
+
+        .border {
+            border: 2px solid lightgray !important;
+            border-radius: .5rem;
+            background-color: white;
+            /* box-shadow: 0px 3px 4px rgba(50, 50, 50, 0.25); */
+        }
+
+        .shadow-sm, .border:hover {
+            box-shadow: 0px 2px 4px rgba(50, 50, 50, 0.25) !important;
+        }
     </style>
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top text-uppercase justify-content-between">
-            <h2 class='p-0 m-0'>Tasnia Sarwar</h2>
+            <h1 class='p-0 m-0'>Tasnia Sarwar</h1>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="#education">Education</a>
                     </li>
                     <li class="nav-item">
@@ -161,18 +177,18 @@
     </header>
     <main>
         <div>
-            <div class='bg-white shadow-sm'>
+            <div class='bg-white'>
                 <section class='mt-5 container' id='hero'>
                     <div class='row'>
-                        <div class='col-12 col-lg-7 my-5 text-center'>
+                        <div class='col-12 col-lg-5 my-5 text-center d-flex justify-content-center justify-content-lg-end'>
                             <img src='me.png' class=''>
                         </div>
                         <div
-                            class='col-12 col-lg-5 d-flex flex-column align-content-center align-items-center justify-content-center'>
+                            class='col-12 col-lg-7 d-flex flex-column align-content-center align-items-center justify-content-center'>
                             <h1 class='text-center mb-4'>Computer Science & <br> Studio Art Undergrad <br>@ UNC Chapel
                                 Hill</h1>
                             <div>
-                                <a class='btn text-white text-uppercase shadow-sm px-3 m-1' target='new'
+                                <a class='btn text-white text-uppercase px-3 m-1' target='new'
                                     href='https://docs.google.com/document/d/157ZIBaBB2N8kswzl6k5n3vmAJamAf8zdyHPy7-pJj0Y/edit?usp=sharing'><i
                                         class="far fa-file"></i>&nbsp; Resume</a>
                                 <a class='btn outline text-uppercase px-3 m-1' target='new'
@@ -187,7 +203,7 @@
             <section class='container'>
                 <h2 class='mt-5'>Education </h2>
                 <div class='row d-flex justify-content-center p-1'>
-                    <div class='col-12 col-lg-6 shadow-sm p-3 bg-white m-2'>
+                    <div class='col-12 col-lg-6 border p-3 m-2'>
                         <h3>University of North Carolina at Chapel Hill</h3>
                         <h4 class='subtitle'>Class of 2021</h4>
                         <h4 class='subtitle'>Computer Science B.S. | Studio Art Minor</h4>
@@ -197,7 +213,7 @@
                             <li>Accepted into Honors Carolina and the Scholars Program</li>
                         </ul>
                     </div>
-                    <div class='col-12 col-lg-5 shadow-sm p-3 bg-white m-2'>
+                    <div class='col-12 col-lg-5 border p-3 m-2'>
                         <h3>Relevant Coursework</h3>
                         <ul>
                             <li>Computer Vision
@@ -215,17 +231,17 @@
                 <h2 class='mt-5'>Work Experience</h2>
                 <div class='d-flex justify-content-center'>
                     <ul class='timeline'>
-                        <!-- <li>
+                        <li>
                             <img src='images/Big_G.jpg' class='circle shadow-sm'>
-                            <div class='shadow-sm p-3 bg-white w-100'>
+                            <div class='border p-3 w-100'>
                                 <h3>Software Engineering Intern</h3>
                                 <h4 class='subtitle'>Google, Corporate Engineering POps Works</h4>
                                 <h4 class='subtitle'>May 2020 - August 2020</h4>
                             </div>
-                        </li> -->
+                        </li>
                         <li>
                             <img src='images/unc.jpg' class='circle shadow-sm'>
-                            <div class='shadow-sm p-3 bg-white w-100'>
+                            <div class='border p-3 bg-white w-100'>
                                 <h3>Undergraduate Learning Assistant</h3>
                                 <h4 class='subtitle'>UNC Chapel Hill, COMP 590: Software Archictectures</h4>
                                 <h4 class='subtitle'>January 2020 - Present</h4>
@@ -233,7 +249,7 @@
                         </li>
                         <li>
                             <img src='images/unc.jpg' class='circle shadow-sm'>
-                            <div class='shadow-sm p-3 bg-white w-100'>
+                            <div class='border p-3 bg-white w-100'>
                                 <h3>Undergraduate Research Assistant</h3>
                                 <h4 class='subtitle'>UNC Chapel Hill, VACLab</h4>
                                 <h4 class='subtitle'>August 2019 - January 2020</h4>
@@ -252,7 +268,7 @@
                         </li>
                         <li>
                             <img src='images/Big_G.jpg' class='circle shadow-sm'>
-                            <div class='shadow-sm p-3 bg-white w-100'>
+                            <div class='border p-3 bg-white w-100'>
                                 <h3>Engineering Practicum Intern</h3>
                                 <h4 class='subtitle'>Google, Cloud Storage Front End</h4>
                                 <h4 class='subtitle'>May 2019 - August 2019</h4>
@@ -275,7 +291,7 @@
                         </li>
                         <li>
                             <img src='images/sas.svg' class='circle shadow-sm'>
-                            <div class='shadow-sm p-3 bg-white w-100'>
+                            <div class='border p-3 bg-white w-100'>
                                 <h3>Technical Intern</h3>
                                 <h4 class='subtitle'>SAS Institute, R&D Operations</h4>
                                 <h4 class='subtitle'>May 2016 - August 2018</h4>
@@ -301,8 +317,34 @@
                 <hr class='nav-header' id='other'>
             </section>
             <section class='container'>
-                <h2 class='mt-5'>Projects/Other Experience </h2>
+                <h2 class='mt-5'>Projects</h2>
                 <p>Under construction</p>
+                <div class='d-flex justify-content-start flex-wrap pb-5'>
+                    <div class='border p-3 bg-white m-1'>
+                        Google Sheets to JSON
+                    </div>
+                    <div class='border p-3 bg-white m-1'>
+                        Pearl Hacks 2020 Marketing Site
+                    </div>
+                    <div class='border p-3 bg-white m-1'>
+                        Pearl Hacks 2020 Live Site
+                    </div>
+                    <div class='border p-3 bg-white m-1'>
+                        Swipe Share
+                    </div>
+                    <div class='border p-3 bg-white m-1'>
+                        Pokedex
+                    </div>
+                    <div class='border p-3 bg-white m-1'>
+                        2048
+                    </div>
+                    <div class='border p-3 bg-white m-1'>
+                        Disaster Tweet Recognition with NLP
+                    </div>
+                    <div class='border p-3 bg-white m-1'>
+                        Automatic Panorama Builder
+                    </div>
+                </div>
                 <!-- <ul>
                     <li>Director of Technology at Pearl Hacks</li>
                     <li>Swipe Share</li>
@@ -310,7 +352,7 @@
                     <li>Program Chair at UNC IOP Tech Team</li>
                 </ul> -->
             </section>
-            </>
+            </div>
     </main>
     <footer class='footer text-white text-center p-5'>
         <div>
