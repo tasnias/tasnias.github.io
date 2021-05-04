@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/54e7e1ecc6.js" crossorigin="anonymous"></script>
@@ -23,14 +23,10 @@
             font-family: Raleway;
         }
 
-        body {
-            /* background-color: rgba(185, 185, 185, 0.15); */
-        }
-
-        h1
-        {
+        h1 {
             font-family: 'Abril Fatface';
         }
+
         h2 {
             font-weight: bold;
             color: #C45911;
@@ -44,7 +40,7 @@
 
         nav {
             color: #C45911 !important;
-            border-bottom: 2px solid lightgray;
+            border-bottom: 1.5px solid lightgray;
             font-weight: bolder;
         }
 
@@ -105,7 +101,7 @@
         .btn {
             background-color: #C45911;
             color: white;
-            border: 2px solid #C45911;
+            border: 1.5px solid #C45911;
             font-weight: bold;
             /* border-radius: .5rem; */
         }
@@ -140,14 +136,22 @@
         }
 
         .border {
-            border: 2px solid lightgray !important;
+            border: 1.5px solid lightgray !important;
             border-radius: .5rem;
             background-color: white;
             /* box-shadow: 0px 3px 4px rgba(50, 50, 50, 0.25); */
         }
 
-        .shadow-sm, .border:hover {
+        .rounded-top {
+            border-radius: 0.5rem 0.5rem 0 0 !important;
+        }
+
+        .shadow-sm {
             box-shadow: 0px 2px 5px rgba(50, 50, 50, 0.2) !important;
+        }
+
+        .navbar-toggler {
+            border: none !important;
         }
     </style>
 </head>
@@ -169,8 +173,12 @@
                         <a class="nav-link" href="#work">Work Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#other">Projects</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#art">Art</a>
+                    </li>
+
                 </ul>
             </div>
         </nav>
@@ -180,8 +188,9 @@
             <div class='bg-white'>
                 <section class='mt-5 container' id='hero'>
                     <div class='row'>
-                        <div class='col-12 col-lg-5 my-5 text-center d-flex justify-content-center justify-content-lg-end'>
-                            <img src='me.png' class='img-fluid'>
+                        <div
+                            class='col-12 col-lg-5 my-5 text-center d-flex justify-content-center justify-content-lg-end'>
+                            <img src='images/art/me.png' class='img-fluid'>
                         </div>
                         <div
                             class='col-12 col-lg-7 d-flex flex-column align-content-center align-items-center justify-content-center'>
@@ -190,7 +199,7 @@
                             <div>
                                 <a class='btn text-white text-uppercase px-3 m-1' target='new'
                                     href='https://docs.google.com/document/d/157ZIBaBB2N8kswzl6k5n3vmAJamAf8zdyHPy7-pJj0Y/edit?usp=sharing'><i
-                                        class="far fa-file"></i>&nbsp; Resume</a>
+                                        class="far fa-file-alt"></i>&nbsp; Resume</a>
                                 <a class='btn outline text-uppercase px-3 m-1' target='new'
                                     href='mailto:tasnias@live.unc.edu'><i class="far fa-envelope"></i> &nbsp;
                                     Contact</a>
@@ -211,6 +220,7 @@
                             <li>GPA: 3.928</li>
                             <li>Pogue Scholar</li>
                             <li>Accepted into Honors Carolina and the Scholars Program</li>
+                            <li>Pearl Hacks Director of Technology (2019-2021)</li>
                         </ul>
                     </div>
                     <div class='col-12 col-lg-5 border p-3 m-2'>
@@ -234,9 +244,27 @@
                         <li>
                             <img src='images/Big_G.jpg' class='circle shadow-sm'>
                             <div class='border p-3 w-100'>
+                                <h3>Software Engineer</h3>
+                                <h4 class='subtitle'>Google, Corporate Engineering</h4>
+                                <h4 class='subtitle'>August 2021 | NYC, NY</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <img src='images/Big_G.jpg' class='circle shadow-sm'>
+                            <div class='border p-3 w-100'>
                                 <h3>Software Engineering Intern</h3>
                                 <h4 class='subtitle'>Google, Corporate Engineering POps Works</h4>
-                                <h4 class='subtitle'>May 2020 - August 2020</h4>
+                                <h4 class='subtitle'>May 2020 - August 2020 | NYC, NY</h4>
+                                <ul>
+                                    <li>Developed a full-stack administrative tool allowing Staffers to manage and have
+                                        an overview of thousands of interview profile groups, which help standardize
+                                        interviewer-to-candidate pairings across roles at Google.
+                                    </li>
+                                    <li>Wrote unit tests, webdriver integration-style tests, and screenshot tests.
+                                    </li>
+                                    <li>Used Angular Typescript with NgRx for the frontend and microservices with Java
+                                        for the backend.</li>
+                                </ul>
                             </div>
                         </li>
                         <li>
@@ -244,7 +272,7 @@
                             <div class='border p-3 bg-white w-100'>
                                 <h3>Undergraduate Learning Assistant</h3>
                                 <h4 class='subtitle'>UNC Chapel Hill, COMP 590: Software Archictectures</h4>
-                                <h4 class='subtitle'>January 2020 - Present</h4>
+                                <h4 class='subtitle'>January 2020 - May 2020 | Chapel Hill, NC</h4>
                             </div>
                         </li>
                         <li>
@@ -252,7 +280,7 @@
                             <div class='border p-3 bg-white w-100'>
                                 <h3>Undergraduate Research Assistant</h3>
                                 <h4 class='subtitle'>UNC Chapel Hill, VACLab</h4>
-                                <h4 class='subtitle'>August 2019 - January 2020</h4>
+                                <h4 class='subtitle'>August 2019 - January 2020 | Chapel Hill, NC</h4>
                                 <ul>
                                     <li>Created feature within lab’s healthcare data explorer to calculate and visualize
                                         a selected patient cohort's statistical distance from baseline datasets, helping
@@ -271,7 +299,7 @@
                             <div class='border p-3 bg-white w-100'>
                                 <h3>Engineering Practicum Intern</h3>
                                 <h4 class='subtitle'>Google, Cloud Storage Front End</h4>
-                                <h4 class='subtitle'>May 2019 - August 2019</h4>
+                                <h4 class='subtitle'>May 2019 - August 2019 | NYC, NY</h4>
                                 <ul>
                                     <li>Created pages exposing Datastore Import/Export in the Cloud Console, offering a
                                         user-friendly alternative to the corresponding gcloud commands.
@@ -294,7 +322,7 @@
                             <div class='border p-3 bg-white w-100'>
                                 <h3>Technical Intern</h3>
                                 <h4 class='subtitle'>SAS Institute, R&D Operations</h4>
-                                <h4 class='subtitle'>May 2016 - August 2018</h4>
+                                <h4 class='subtitle'>May 2016 - August 2018 | Cary, NC</h4>
                                 <ul>
                                     <li>
                                         Wrote a Python script to discover and attach hundreds of physical hosts into
@@ -314,7 +342,7 @@
                         </li>
                     </ul>
                 </div>
-                <hr class='nav-header' id='other'>
+                <hr class='nav-header' id='projects'>
             </section>
             <section class='container'>
                 <h2 class='mt-5'>Projects</h2>
@@ -351,18 +379,51 @@
                         Automatic Panorama Builder
                     </div>
                 </div>
-                <!-- <ul>
-                    <li>Director of Technology at Pearl Hacks</li>
-                    <li>Swipe Share</li>
-                    <li>Google Sheets to JSON</li>
-                    <li>Program Chair at UNC IOP Tech Team</li>
-                </ul> -->
             </section>
-            </div>
+            <hr class='nav-header' id='art'>
+            <section class='container mb-5'>
+                <h2 class='mt-5'>Art</h2>
+                <div class='row'>
+                    <div class='col-12 col-md-4'>
+                        <div class='border my-3'>
+                            <img src='images/art/me.png' class='img-fluid rounded-top'>
+                            <p class='ml-3 mt-3'>Self portrait (Digital Painting)</p>
+                        </div>
+                        <div class='border my-3'>
+                            <img src='images/art/paperclips.JPG' class='img-fluid rounded-top'>
+                            <p class='ml-3 mt-3'>Four Paperclips (Pencil)</p>
+                        </div>
+                        
+                        <div class='border my-3'>
+                            <img src='images/art/foot.png' class='img-fluid rounded-top'>
+                            <p class='ml-3 mt-3'>Sculpted Foot (Clay)</p>
+                        </div>
+                    </div>
+                    <div class='col-12 col-md-4'>
+                        <div class='border my-3'>
+                            <img src='images/art/l9.png' class='img-fluid rounded-top'>
+                            <p class='ml-3 mt-3'>Vanity Still Life (Digital Painting)</p>
+                        </div>
+                        <div class='border my-3'>
+                            <img src='images/art/phil.JPG' class='img-fluid rounded-top'>
+                            <p class='ml-3 mt-3'>Heart-leaf Philodendron (Pencil)</p>
+                        </div>
+                    </div>
+                    <div class='col-12 col-md-4'>
+                        <div class='border my-3'>
+                            <img src='images/art/aloe.jpg' class='img-fluid rounded-top'>
+                            <p class='ml-3 mt-3'>Potted Aloe (Pencil)</p>
+                        </div>
+                        <div class='border my-3'>
+                            <img src='images/art/candle.JPG' class='img-fluid rounded-top'>
+                            <p class='ml-3 mt-3'>Assorted Candles (Colored Pencil)</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
     </main>
     <footer class='footer text-white text-center p-5'>
         <div>
-            <!-- <a href='' target='new'><i class="fab fa-linkedin-in"></i></a> -->
             <a href='http://github.com/tasnias' target='new'><i class="fab fa-github"></i></a>
             <a href='mailto:tasnias@live.unc.edu' target='new'><i class="far fa-envelope"></i></a>
             <a href='https://docs.google.com/document/d/157ZIBaBB2N8kswzl6k5n3vmAJamAf8zdyHPy7-pJj0Y/edit?usp=sharing'
